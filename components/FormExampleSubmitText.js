@@ -53,8 +53,8 @@ class FormExampleSubmitText extends Component {
               <Button type="submit" onClick={this.handleSubmit}>Submit</Button>
               {this.state.showName && <p>"FirstName: " {this.state.firstName} " Last name: "{this.state.lastName}"</p>}
               <br></br>
-              <Input type="text" name="firstNumber" placeholder='first number' onChange={this.displayFirstNumber} value={this.state.firstNumber} />
-              <Input type="text" name="secondNumber" placeholder='second number' onChange={this.displaySecondNumber} value={this.state.secondNumber} />
+              <Input type="number" name="firstNumber" placeholder='first number' onChange={this.displayFirstNumber} value={this.state.firstNumber} />
+              <Input type="number" name="secondNumber" placeholder='second number' onChange={this.displaySecondNumber} value={this.state.secondNumber} />
               <Button type="submit" onClick={this.handleSubmit2}>Sum numbers</Button>
               {this.state.showResult && <p>"Result: " {this.state.firstNumber + this.state.secondNumber} "</p>}
             </Form>

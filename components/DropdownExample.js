@@ -26,6 +26,7 @@ export default class DropdownExampleControlled extends Component {
       <Grid columns={1}>
         <Form>
         <Form.Input
+            type="number"
             placeholder='number'
             name='number'
             value={enteredNumber}
