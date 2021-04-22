@@ -32,17 +32,17 @@ const ButtonExample = () => {
     return ( 
         <Form>
           <Input
-            placeholder='your favourite color'
+            placeholder='color'
             name='colorName'
             value={enteredColor}
             onChange={colorChangeHandler}
             />
             <Button basic color={enteredColor.toLowerCase()}>Colored button</Button>
-            <Button color='grey' onClick={clickHandler1}>Click me +1</Button>
-            <Button color='grey' onClick={clickHandler2}>Click me -1</Button>
+            <Button color='grey' onClick={clickHandler1}>+1</Button>
+            <Button color='grey' onClick={clickHandler2}>-1</Button>
             <Button onClick={resetHandler}>{count}</Button>
-            <Button onClick={magicHandler}>Magic</Button>
-            <Button color={standarColor} onClick={removeMagicHandler}>:)</Button>
+            <Button onClick={magicHandler}>Red</Button>
+            <Button color={standarColor} onClick={removeMagicHandler}>Reset</Button>
         </Form>
     )
 }
